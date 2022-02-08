@@ -35,13 +35,20 @@
             similique nesciunt optio repudiandae culpa? Enim, excepturi? Maiores natus magni unde corrupti eius assumenda odio doloribus quisquam aut quam ipsum officiis sequi aliquid dolor autem, earum asperiores accusantium cum accusamus, voluptatem
             dolorum! Ipsa sit, quidem, dolorem architecto quisquam ullam aspernatur deserunt cupiditate eum excepturi accusantium ipsam, exercitationem dolor!</p>
     </article>
+    <h3 class="heading">Blog list</h3>
+    <ul id="blog-Items">
+        <li>Blog1</li>
+        <li>Blog2</li>
+        <li>Blog3</li>
+        <li>Blog4</li>
+    </ul>
 
     <script>
         //articale part
         const Part = document.getElementsByClassName('blog');
         for (const blog of Part) {
-            blog.style.border = '2px solid black'
-            blog.style.borderRadius = '7px'
+            blog.style.border = '2px solid orange'
+            blog.style.borderRadius = '20px'
             blog.style.margin = '7px'
             blog.style.boxShadow = '2px 8px 8px 5px grey'
             blog.style.PaddingTop = '15px'
@@ -59,6 +66,19 @@
             pera.style.padding = '20px 10px'
 
         }
+
+        //create and add element by using JS
+        //create the element 
+        const li = document.createElement('li');
+        li.innerText = 'Blog5'
+
+        //where to /find 
+
+        const ul = document.getElementById('blog-Items');
+
+
+        // append new element
+        ul.appendChild(li)
     </script>
 
 </body>
